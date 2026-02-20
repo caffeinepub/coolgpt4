@@ -1,2 +1,3 @@
-# coolgpt4
-Exported from Caffeine project: CoolGPT4
+## CoolGPT4
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

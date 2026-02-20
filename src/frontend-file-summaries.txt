@@ -1,0 +1,10 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up the theme provider, renders the header with app title, the chat interface in the main area, and a footer with attribution link.",
+  "frontend/src/components/ChatInterface.tsx": "Container component that manages the chat layout, displays loading states, empty states, and coordinates the message list with the input area while handling auto-scroll behavior.",
+  "frontend/src/components/MessageList.tsx": "Renders individual chat messages with avatars, timestamps, and distinct styling for user vs assistant messages using emerald green for user messages.",
+  "frontend/src/components/MessageInput.tsx": "Text input component with a textarea for typing messages and a send button, supporting Enter to send and Shift+Enter for new lines.",
+  "frontend/src/hooks/useChatMessages.ts": "Custom React Query hook that fetches messages from the backend, handles sending new user messages, and manages loading/error states with automatic cache invalidation.",
+  "frontend/src/lib/utils.ts": "Utility function for merging Tailwind CSS classes using clsx and tailwind-merge.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining an emerald/green color palette for both light and dark modes, avoiding blue and purple tones.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens, Inter font family, and extended design system for the modern chat interface aesthetic."
+}

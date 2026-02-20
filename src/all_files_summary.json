@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Motoko actor implementing a chat message storage system with send, getAll, and getRange query methods, storing messages with timestamps and sender types (user/assistant) in a Map.",
+  "feature_evidence.json": "Feature evidence report documenting three implemented features: chat interface UI, message sending functionality, and modern design styling with emerald/green color scheme.",
+  "frontend-file-summaries.txt": "JSON object containing one-line summaries of frontend source files describing their roles in the chat application.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color system variables for light and dark themes with neutral grayscale palette and emerald accent colors.",
+  "frontend/index.html": "HTML entry point for the CoolGPT4 application with root div and module script reference to main.tsx.",
+  "frontend/src/App.tsx": "Root React component wrapping the app with ThemeProvider, rendering header with title, ChatInterface main content, footer with attribution, and Toaster for notifications.",
+  "frontend/src/components/ChatInterface.tsx": "Main chat container managing message display with loading/empty states, auto-scrolling to bottom on new messages, and coordinating MessageList with MessageInput components.",
+  "frontend/src/components/MessageInput.tsx": "Textarea input component with send button supporting Enter to send and Shift+Enter for newlines, styled with emerald accent colors and loading states.",
+  "frontend/src/components/MessageList.tsx": "Renders chat messages with avatars, timestamps, and distinct styling for user (emerald background) vs assistant messages with proper alignment and formatting.",
+  "frontend/src/hooks/useActor.ts": "React Query hook managing ICP actor creation with Internet Identity authentication, invalidating dependent queries when identity changes.",
+  "frontend/src/hooks/useChatMessages.ts": "Custom hook using React Query to fetch messages via getAll() and send new user messages with automatic cache invalidation and error toast notifications.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing login state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/index.css": "Tailwind CSS configuration file defining CSS custom properties for light and dark themes, including colors for UI elements (primary, secondary, destructive, sidebar, charts) using OKLCH color space.",
+  "frontend/src/lib/utils.ts": "Utility module exporting a `cn` function that combines clsx and tailwind-merge for conditional CSS class name merging.",
+  "frontend/src/main.tsx": "Application entry point that renders the React app with QueryClient and InternetIdentityProvider wrappers for state management and authentication.",
+  "frontend/tailwind.config.js": "Tailwind configuration defining theme extensions including OKLCH color mappings, border radius variables, custom fonts (Inter), animations (accordion), and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project metadata tracking existing features (chat interface, message sending, modern design) and a pending backend actor feature request for storing/retrieving chat messages with timestamps and sender roles."
+}

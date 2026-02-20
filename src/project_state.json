@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-chat-interface-with-a-message-list-displaying-conversation-history-and-a-text-input-area-with-send-button-for-submitting-new-messages",
+      "title": "Build a chat interface with a message list displaying conversation history and a text input area with send button for submitting new messages",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-message-sending-functionality-that-posts-user-messages-to-the-backend-and-displays-them-in-the-chat-interface",
+      "title": "Implement message sending functionality that posts user messages to the backend and displays them in the chat interface",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-modern-sleek-chat-application-design-with-a-clean-layout-contemporary-typography-and-a-professional-color-scheme-distinct-from-blue-and-purple",
+      "title": "Apply a modern, sleek chat application design with a clean layout, contemporary typography, and a professional color scheme distinct from blue and purple",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a backend actor that stores and retrieves chat messages with fields for message text, timestamp, and sender role (user or assistant)",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "CoolGPT4",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

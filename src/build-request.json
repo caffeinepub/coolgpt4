@@ -1,0 +1,84 @@
+{
+  "kind": "build_request",
+  "title": "Create CoolGPT4 chat interface",
+  "projectName": "CoolGPT4",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a backend actor that stores and retrieves chat messages with fields for message text, timestamp, and sender role (user or assistant)",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend can store chat messages persistently",
+        "Messages include text content, timestamp, and role",
+        "Backend provides methods to add and retrieve messages"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a chat interface with a message list displaying conversation history and a text input area with send button for submitting new messages",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Messages display in chronological order with sender identification",
+        "User can type and submit messages via input field",
+        "Submitted messages appear in the conversation view"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement message sending functionality that posts user messages to the backend and displays them in the chat interface",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "User messages are sent to backend when submitted",
+        "Messages persist across page refreshes",
+        "Chat interface updates immediately after sending"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Apply a modern, sleek chat application design with a clean layout, contemporary typography, and a professional color scheme distinct from blue and purple",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Design uses a cohesive color palette that is not blue or purple",
+        "Typography is modern and readable",
+        "Layout is clean with proper spacing and visual hierarchy",
+        "Overall aesthetic is professional and contemporary"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use single-actor Motoko backend architecture",
+    "Frontend must use React, Tailwind CSS, and React Query",
+    "Do not modify immutable frontend paths including useInternetIdentity hooks, useActor.ts, main.tsx, or components/ui"
+  ],
+  "nonGoals": [
+    "Real-time chat functionality using WebSockets",
+    "AI response generation or LLM integration",
+    "Multi-user chat rooms or direct messaging between users",
+    "Message editing or deletion features"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
